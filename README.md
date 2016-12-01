@@ -42,5 +42,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   ```
   
  2. Testing
+     ```Shell
+    models:
+    Market-1501 dataset:
+    ```
 
    
