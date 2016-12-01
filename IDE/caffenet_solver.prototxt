@@ -1,0 +1,22 @@
+net: "models/mars/CaffeNet/caffenet.prototxt"
+
+test_iter: 120
+test_interval: 5000
+
+iter_size: 1
+
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 10000
+max_iter: 50000
+
+display: 20
+average_loss: 20
+
+momentum: 0.9
+weight_decay: 0.0005
+
+snapshot: 0
+snapshot_prefix: "output/mars_train/caffenet"
+solver_mode: GPU
