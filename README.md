@@ -22,9 +22,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     make -j8 && make matcaffe
     ```
 
-5. Download pre-computed Faster R-CNN detectors
+5. Download pre-computed models and Market-1501 dataset
     ```Shell
-    cd $FRCN_ROOT
-    ./data/scripts/fetch_faster_rcnn_models.sh
+    models:
+    Market-1501 dataset:
     ```
    
