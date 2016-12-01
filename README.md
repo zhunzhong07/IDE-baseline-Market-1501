@@ -22,8 +22,8 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     make -j8 && make matcaffe
     ```
 3. Download pre-computed models and Market-1501 dataset
-   ```
-   models:
-   Market-1501 dataset:
+   ```Shell
+   # models:
+   # Market-1501 dataset:
    
    
