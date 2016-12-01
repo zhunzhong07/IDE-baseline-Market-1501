@@ -24,6 +24,8 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 3. Download pre-computed models and Market-1501 dataset
    ```Shell
    # models:
+   baiduyun
    # Market-1501 dataset:
+   baiduyun
    ```
    
