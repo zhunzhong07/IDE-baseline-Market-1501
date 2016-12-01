@@ -43,8 +43,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   
 2. Testing
      ```Shell
-    models:
-    Market-1501 dataset:
+    Run Matlab: extract_feat_CaffeNet.m  or extract_feat_ResNet_50.m
     ```
 
    
