@@ -40,5 +40,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   For ResNet_50
   ./experiments/market/train_IDE_ResNet_50.sh
   ```
+  
+ 2. Testing
 
    
