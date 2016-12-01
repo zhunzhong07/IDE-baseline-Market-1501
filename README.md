@@ -21,11 +21,10 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     #   http://caffe.berkeleyvision.org/installation.html
     make -j8 && make matcaffe
     ```
-3. Download pre-computed models and Market-1501 dataset
-   ```Shell
-   # models:
-   baiduyun
-   # Market-1501 dataset:
-   baiduyun
-   ```
+
+5. Download pre-computed Faster R-CNN detectors
+    ```Shell
+    cd $FRCN_ROOT
+    ./data/scripts/fetch_faster_rcnn_models.sh
+    ```
    
