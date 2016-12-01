@@ -22,9 +22,23 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     make -j8 && make matcaffe
     ```
 
-5. Download pre-computed models and Market-1501 dataset
+3. Download pre-computed models and Market-1501 dataset
     ```Shell
     models:
     Market-1501 dataset:
     ```
+    
+    
+### Installation for training and testing IDE model
+
+1. Training
+  ```Shell
+  # Make sure to clone with --recursive
+  cd IDE_ROOT
+  For CaffeNet
+  ./experiments/market/train_IDE_CaffeNet.sh  
+  For ResNet_50
+  ./experiments/market/train_IDE_ResNet_50.sh
+  ```
+
    
