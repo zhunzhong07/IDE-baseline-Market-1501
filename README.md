@@ -41,7 +41,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   ./experiments/market/train_IDE_ResNet_50.sh
   ```
   
- 2. Testing
+2. Testing
      ```Shell
     models:
     Market-1501 dataset:
