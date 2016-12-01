@@ -2,9 +2,6 @@
 	path = caffe-fast-rcnn
 	url = https://github.com/rbgirshick/caffe-fast-rcnn.git
 	branch = fast-rcnn
-[submodule "wide-residual-networks"]
-	path = wide-residual-networks
-	url = https://github.com/zhunzhong07/wide-residual-networks
 [submodule "caffe"]
 	path = caffe
 	url = https://github.com/BVLC/caffe
