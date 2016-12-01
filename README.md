@@ -11,7 +11,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 1. Clone the IDE repository
   ```Shell
   # Make sure to clone with --recursive
-  git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
+  git clone --recursive https://github.com/zhunzhong07/Market-IDE-baseline.git
   ```
 
 2. Build Caffe and matcaffe
