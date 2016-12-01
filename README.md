@@ -41,9 +41,14 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   ./experiments/market/train_IDE_ResNet_50.sh
   ```
   
-2. Testing
+2. Feature Extraction
      ```Shell
     Run Matlab: extract_feat_CaffeNet.m  or extract_feat_ResNet_50.m
+    ```
+
+3. Evaluation
+     ```Shell
+    Run Matlab: baseline_evaluation_ide_CaffeNet.m  or baseline_evaluation_ide_ResNet_50.m
     ```
 
    
