@@ -87,13 +87,9 @@ Using the models and features above, you can reproduce the results as follows:
 |IDE_CaffeNet + Euclidean |   Rank@1 = 59.53% | mAP = 32.85%|
 | :-------- | --------:| :------: |
 |DE_CaffeNet + XQDA     |    Rank@1 = 62.00% | mAP = 37.55%|
-
 |IDE_CaffeNet + KISSME    |   Rank@1 = 61.02% | mAP = 36.72%|
-
 |IDE_ResNet_50 + Euclidean |  Rank@1 = 75.62% | mAP = 50.68%|
-
 |IDE_ResNet_50 + XQDA      |  Rank@1 = 76.01% | mAP = 52.98%|
-
 |IDE_ResNet_50 + KISSME    |  Rank@1 = 77.52% | mAP = 53.88%|
 
 
