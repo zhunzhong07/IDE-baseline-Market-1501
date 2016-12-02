@@ -10,6 +10,13 @@ If you find this code useful in your research, please consider citing:
     journal={arXiv preprint arXiv:1610.02984},
     year={2016}
     }
+    
+    @inproceedings{zheng2015scalable,
+    title={Scalable Person Re-identification: A Benchmark},
+    author={Zheng, Liang and Shen, Liyue and Tian, Lu and Wang, Shengjin and Wang, Jingdong and Tian, Qi},
+    booktitle={Computer Vision, IEEE International Conference on},
+    year={2015}
+    }
 
 
 ### Requirements: Caffe
