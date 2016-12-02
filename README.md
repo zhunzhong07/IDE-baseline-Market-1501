@@ -44,8 +44,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder. 
   ```
   
-  Pre-trained imagenet models is provided [here](https://pan.baidu.com/s/1o7YZT8Y) 
-  Market-1501 is provided on Baidu Disk [here](https://pan.baidu.com/s/1ntIi2Op).
+  [Imagenet models](https://pan.baidu.com/s/1o7YZT8Y).
+  
+  [Market-1501](https://pan.baidu.com/s/1ntIi2Op)
 
 ### Training and testing IDE model
 
