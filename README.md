@@ -68,7 +68,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     Run Matlab: baseline_evaluation_ide_CaffeNet.m  or baseline_evaluation_ide_ResNet_50.m
     ```
 
-### Requirements: Contact us
+### Contact us
 
 If you have any questions about this code, please do not hesitate to contact us.
 
