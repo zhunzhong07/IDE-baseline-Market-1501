@@ -40,36 +40,39 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 
 3. Download pre-computed models and Market-1501 dataset
     ```Shell
-    Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
+    Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
     Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
-    Please download the pre-trained IDE models and put it in the "out_put/market_train" folder.
     ```
-   
-### Installation for training and testing IDE model
 
-1. Training
+### Training and testing IDE model
+
+1. Training 
   ```Shell
-  # Make sure to clone with --recursive
-  cd IDE_ROOT
-  For CaffeNet
+  cd $IDE_ROOT
+  # train IDE on CaffeNet
   ./experiments/market/train_IDE_CaffeNet.sh  
-  For ResNet_50
+  # train IDE ResNet_50
   ./experiments/market/train_IDE_ResNet_50.sh
   ```
   
 2. Feature Extraction
      ```Shell
-    Run Matlab: extract_feat_CaffeNet.m  or extract_feat_ResNet_50.m
+    cd $IDE_ROOT/market_evaluation
+    Run Matlab: extract_feature.m
+    # The IDE features are saved under: "market_evaluation/feat"
     ```
 
 3. Evaluation
      ```Shell
-    Run Matlab: baseline_evaluation_ide_CaffeNet.m  or baseline_evaluation_ide_ResNet_50.m
+    Run Matlab: baseline_evaluation_IDE.m
     ```
     
-    
+    Please download the pre-trained IDE models and put it in the "out_put/market_train" folder.
+
 ### Results
-You can reproduce the results as follows:
+You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. You can download them in the links below. 
+
+Using the models and features above, you can reproduce the results as follows:
 
 -----------------    IDE  | IDE+XQDA | IDE+KISSME | 
 
