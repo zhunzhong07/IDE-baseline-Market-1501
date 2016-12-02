@@ -10,6 +10,7 @@ LOG="experiments/logs/${DATASET}_re-id_${NET}.txt.`date +'%Y-%m-%d_%H-%M-%S'`"
 cd $(dirname ${BASH_SOURCE[0]})/../../
 
 mkdir -p ${SNAPSHOTS_DIR}
+mkdir -p experiments/logs/
 
 GLOG_logtostderr=1 ${CAFFE}/build/tools/caffe train \
   -solver models/${DATASET}/${NET}/${NET}_solver.prototxt \
