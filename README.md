@@ -71,5 +71,6 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 If you have any questions about this code, please do not hesitate to contact us.
 
 [Zhun Zhong](http://zhunzhong.site): zhunzhong@stu.xmu.edu.cn
+
 [Liang Zheng](http://liangzheng.com.cn): liangzheng06@gmail.com
    
