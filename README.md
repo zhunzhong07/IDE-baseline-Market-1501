@@ -39,10 +39,10 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     ```
 
 3. Download pre-computed models and Market-1501 dataset
-    ```Shell
-    Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
-    Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
-    ```
+  ```Shell
+  Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
+  Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
+  ```
 
 ### Training and testing IDE model
 
