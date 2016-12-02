@@ -44,9 +44,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder. 
   ```
   
-  [Imagenet models](https://pan.baidu.com/s/1o7YZT8Y).
+[Imagenet models](https://pan.baidu.com/s/1o7YZT8Y).
   
-  [Market-1501](https://pan.baidu.com/s/1ntIi2Op)
+[Market-1501](https://pan.baidu.com/s/1ntIi2Op)
 
 ### Training and testing IDE model
 
@@ -73,7 +73,12 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     ```
 
 ### Results
-You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. [IDE models](https://pan.baidu.com/s/1gfE5EAf) [IDE features](https://pan.baidu.com/s/1bI3yqU)
+You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. 
+
+[IDE models](https://pan.baidu.com/s/1gfE5EAf) 
+
+[IDE features](https://pan.baidu.com/s/1bI3yqU)
+
 
 Using the models and features above, you can reproduce the results as follows:
 
