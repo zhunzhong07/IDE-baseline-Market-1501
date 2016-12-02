@@ -67,6 +67,17 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
      ```Shell
     Run Matlab: baseline_evaluation_ide_CaffeNet.m  or baseline_evaluation_ide_ResNet_50.m
     ```
+    
+    
+### Results
+You can reproduce the results as follows:
+
+-----------------   IDE    IDE+XQDA   IDE+KISSME    
+CaffeNet   Rank@1 59.53%    62.00%     61.02%
+           mAP    32.85%    37.55%     36.72%
+ResNet_50  Rank@1 59.53%    62.00%     61.02%
+           mAP    32.85%    37.55%     36.72%
+
 
 ### Contact us
 
