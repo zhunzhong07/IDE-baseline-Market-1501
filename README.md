@@ -72,12 +72,16 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 ### Results
 You can reproduce the results as follows:
 
------------------   IDE    IDE+XQDA   IDE+KISSME    
-CaffeNet   Rank@1 59.53%    62.00%     61.02%
-           mAP    32.85%    37.55%     36.72%
-ResNet_50  Rank@1 59.53%    62.00%     61.02%
-           mAP    32.85%    37.55%     36.72%
+-----------------   IDE    IDE+XQDA   IDE+KISSME  
 
+CaffeNet   Rank@1 59.53%    62.00%     61.02%
+
+CaffeNet   mAP    32.85%    37.55%     36.72%
+           
+ResNet_50  Rank@1 59.53%    62.00%     61.02%
+
+ResNet_50  mAP    32.85%    37.55%     36.72%
+           
 
 ### Contact us
 
