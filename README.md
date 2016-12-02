@@ -44,9 +44,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder. 
   ```
   
-[Imagenet models](https://pan.baidu.com/s/1o7YZT8Y).
+- [Pre-trainediImagenet models](https://pan.baidu.com/s/1o7YZT8Y).
   
-[Market-1501](https://pan.baidu.com/s/1ntIi2Op)
+- [Market-1501](https://pan.baidu.com/s/1ntIi2Op)
 
 ### Training and testing IDE model
 
@@ -75,23 +75,23 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 ### Results
 You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. 
 
-[IDE models](https://pan.baidu.com/s/1gfE5EAf) 
+- [IDE models](https://pan.baidu.com/s/1gfE5EAf) 
 
-[IDE features](https://pan.baidu.com/s/1bI3yqU)
+- [IDE features](https://pan.baidu.com/s/1bI3yqU)
 
 
 Using the models and features above, you can reproduce the results as follows:
 
------------------    IDE  | IDE+XQDA | IDE+KISSME | 
 
-CaffeNet   |Rank@1|59.53% |  62.00%  |  61.02% 
 
-CaffeNet   | mAP  |32.85% |  37.55%  |  36.72%
-           
-ResNet_50  |Rank@1|75.62% |  76.01%  |  77.52%
+IDE_CaffeNet + Euclidean    Rank@1 = 59.53% | mAP = 32.85%
+IDE_CaffeNet + XQDA         Rank@1 = 62.00% | mAP = 37.55%
+IDE_CaffeNet + KISSME       Rank@1 = 61.02% | mAP = 36.72%
+-------------------------------------------------------
+IDE_ResNet_50 + Euclidean   Rank@1 = 75.62% | mAP = 50.68%
+IDE_ResNet_50 + XQDA        Rank@1 = 76.01% | mAP = 52.98%
+IDE_ResNet_50 + KISSME      Rank@1 = 77.52% | mAP = 53.88%
 
-ResNet_50  | mAP  |50.68% |  52.98%  |  53.88%
-           
 
 ### Contact us
 
