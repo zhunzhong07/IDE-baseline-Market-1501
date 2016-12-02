@@ -2,6 +2,16 @@
 =============
 This code was used for experiments with IDE for Market dataset.
 
+If you find this code useful in your research, please consider citing:
+
+    @article{zheng2016person,
+    title={Person Re-identification: Past, Present and Future},
+    author={Zheng, Liang and Yang, Yi and Hauptmann, Alexander G},
+    journal={arXiv preprint arXiv:1610.02984},
+    year={2016}
+    }
+
+
 ### Requirements: Caffe
 
 Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
