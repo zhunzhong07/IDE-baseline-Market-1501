@@ -1,4 +1,4 @@
-# Code for IDE baseline on Market-1501 Person Re-identification Dataset
+# Code for ID-discriminative Embedding (IDE) baseline on Market-1501 Person Re-identification Dataset
 =============
 This code was used for experiments with IDE for Market-1501 dataset.
 
@@ -68,4 +68,8 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
     Run Matlab: baseline_evaluation_ide_CaffeNet.m  or baseline_evaluation_ide_ResNet_50.m
     ```
 
+If you have any questions about this code, please do not hesitate to contact us.
+
+[Zhun Zhong](http://zhunzhong.site): zhunzhong@stu.xmu.edu.cn
+[Liang Zheng](http://liangzheng.com.cn): liangzheng06@gmail.com
    
