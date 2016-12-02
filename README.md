@@ -1,6 +1,6 @@
-# Code for IDE baseline on Market Person Re-identification Dataset
+# Code for IDE baseline on Market-1501 Person Re-identification Dataset
 =============
-This code was used for experiments with IDE for Market dataset.
+This code was used for experiments with IDE for Market-1501 dataset.
 
 If you find this code useful in your research, please consider citing:
 
