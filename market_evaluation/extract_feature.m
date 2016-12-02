@@ -9,7 +9,7 @@ netname = 'ResNet_50'; % network: CaffeNet  or ResNet_50
 
 % set your path to the prototxt and model
 model =  ['../models/market/' netname '/' netname '_test.prototxt'];
-weights = ['../output/market_train/' netname '.caffemodel']; 
+weights = ['../output/market_train/IDE_' netname '.caffemodel']; 
 net = caffe.Net(model, weights, 'test');
 
 if strcmp(netname, 'CaffeNet')

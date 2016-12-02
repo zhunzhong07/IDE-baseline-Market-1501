@@ -1,4 +1,4 @@
-net: "models/market/CaffeNet/CaffeNet.prototxt"
+net: "models/market/CaffeNet/CaffeNet_train_val.prototxt"
 
 test_iter: 20
 test_interval: 500
@@ -15,5 +15,5 @@ max_iter: 10000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 0
-snapshot_prefix: "output/market_train/CaffeNet"
+snapshot_prefix: "output/market_train/IDE_CaffeNet"
 solver_mode: GPU

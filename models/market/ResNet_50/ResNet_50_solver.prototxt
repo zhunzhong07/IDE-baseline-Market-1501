@@ -1,4 +1,4 @@
-net: "models/market/ResNet_50/ResNet_50.prototxt"
+net: "models/market/ResNet_50/ResNet_50_train_val.prototxt"
 
 test_iter: 10
 test_interval: 500
@@ -17,5 +17,5 @@ max_iter: 50000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 0
-snapshot_prefix: "output/market_train/ResNet_50"
+snapshot_prefix: "output/market_train/IDE_ResNet_50"
 solver_mode: GPU

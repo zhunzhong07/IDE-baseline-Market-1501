@@ -1,56 +1,13 @@
 name: "CaffeNet"
-layer {
-  name: "data"
-  type: "ImageData"
-  top: "data"
-  top: "label"
-  include {
-    phase: TRAIN
-  }
-  transform_param {
-    crop_size: 227
-    mean_value: 104
-    mean_value: 117
-    mean_value: 124
-    mirror: true
-  }
-  image_data_param {  
-    source: "data/market/train.txt" 
-    root_folder: "data/market/"  
-    shuffle: true
-    new_height: 227  
-    new_width: 227  
-    #is_color: true  
-    batch_size: 64
-  }
+
+input: "data"
+input_shape {
+  dim: 1
+  dim: 3
+  dim: 227
+  dim: 227
 }
 
-
-layer {
-  name: "data"
-  type: "ImageData"
-  top: "data"
-  top: "label"
-  include {
-    phase: TEST
-  }
-  transform_param {
-    crop_size: 227
-    mean_value: 104
-    mean_value: 117
-    mean_value: 124
-    mirror: true
-  }
-  image_data_param {  
-    source: "data/market/val.txt" 
-    root_folder: "data/market/"  
-    shuffle: true
-    new_height: 227  
-    new_width: 227  
-    #is_color: true  
-    batch_size: 64
-  }
-}
 layer {
   name: "conv1"
   type: "Convolution"
@@ -69,6 +26,14 @@ layer {
     kernel_size: 11
    # pad: 5
     stride: 4
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
   }
 }
 layer {
@@ -118,6 +83,14 @@ layer {
     kernel_size: 5
     pad: 2
     group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
   }
 }
 layer {
@@ -166,6 +139,14 @@ layer {
     num_output: 384
     kernel_size: 3
     pad: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
   }
 }
 layer {
@@ -192,6 +173,14 @@ layer {
     kernel_size: 3
     pad: 1
     group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
   }
 }
 layer {
@@ -218,6 +207,14 @@ layer {
     kernel_size: 3
     pad: 1
     group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
   }
 }
 layer {
@@ -318,50 +315,5 @@ layer {
   top: "fc7"
   dropout_param {
     dropout_ratio: 0.5
-  }
-}
-layer {
-  name: "fc8_"
-  type: "InnerProduct"
-  bottom: "fc7"
-  top: "fc8_"
-  param {
-    lr_mult: 1
-    decay_mult: 1
-  }
-  param {
-    lr_mult: 2
-    decay_mult: 0
-  }
-  inner_product_param {
-    num_output: 751
-    weight_filler {
-      type: "gaussian"
-      std: 0.001
-    }
-    bias_filler {
-      type: "constant"
-      value: 0
-    }
-  }
-}
-layer {
-  name: "loss"
-  type: "SoftmaxWithLoss"
-  bottom: "fc8_"
-  bottom: "label"
-  top: "loss"
-  propagate_down: 1
-  propagate_down: 0
-}
-
-layer {
-  name: "accuracy"
-  type: "Accuracy"
-  bottom: "fc8_"
-  bottom: "label"
-  top: "accuracy"
-  include {
-    phase: TEST
   }
 }

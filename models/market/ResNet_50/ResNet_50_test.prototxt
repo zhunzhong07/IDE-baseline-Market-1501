@@ -1,51 +1,11 @@
 name: "Res50-base"
 
-
-layer {
-  name: "data"
-  type: "ImageData"  
-  top: "data"
-  top: "label"
-  include {
-    phase: TRAIN
-  }
-  transform_param {  
-    crop_size: 224
-    mean_file: "resnet/ResNet_mean.binaryproto"  
-    mirror: true
-  }  
-  image_data_param {  
-    source: "data/market/train.txt" 
-    root_folder: "data/market/" 
-    shuffle: true
-    new_height: 224  
-    new_width: 224  
-    is_color: true  
-    batch_size: 16
-  }
-}
-layer {
-  name: "data"
-  type: "ImageData"  
-  top: "data"
-  top: "label"
-  include {
-    phase: TEST
-  }
-  transform_param {  
-    crop_size: 224
-    mean_file: "resnet/ResNet_mean.binaryproto"
-    mirror: true
-  }  
-  image_data_param {  
-    source: "data/market/val.txt" 
-    root_folder: "data/market/" 
-    shuffle: true
-    new_height: 224  
-    new_width: 224  
-    is_color: true  
-    batch_size: 16
-  }
+input: "data"
+input_shape {
+  dim: 1
+  dim: 3
+  dim: 224
+  dim: 224
 }
 
 layer {
@@ -2342,51 +2302,4 @@ layer {
 		stride: 1
 		pool: AVE
 	}
-}
-
-
-
-layer {
-  name: "fc8_"
-  type: "InnerProduct"
-  bottom: "pool5"
-  top: "fc8_"
-  param {
-    lr_mult: 1
-    decay_mult: 1
-  }
-  param {
-    lr_mult: 2
-    decay_mult: 0
-  }
-  inner_product_param {
-    num_output: 751
-    weight_filler {
-      type: "gaussian"
-      std: 0.001
-    }
-    bias_filler {
-      type: "constant"
-      value: 0
-    }
-  }
-}
-
-layer {
-  name: "loss"
-  type: "SoftmaxWithLoss"
-  bottom: "fc8_"
-  bottom: "label"
-  top: "loss"
-}
-
-layer {
-  name: "accuracy"
-  type: "Accuracy"
-  bottom: "fc8_"
-  bottom: "label"
-  top: "accuracy"
-  include {
-    phase: TEST
-  }
 }
