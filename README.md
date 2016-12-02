@@ -41,11 +41,11 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 
 3. Download pre-computed models and Market-1501 dataset
     ```Shell
-    models:
-    Market-1501 dataset:
+    1. Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
+    2. Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
+    3. Please download the pre-trained IDE models and put it in the "out_put/market_train" folder.
     ```
-    
-    
+   
 ### Installation for training and testing IDE model
 
 1. Training
@@ -72,15 +72,15 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 ### Results
 You can reproduce the results as follows:
 
------------------   IDE  |  IDE+XQDA  | IDE+KISSME  
+-----------------    IDE  | IDE+XQDA | IDE+KISSME | 
 
-CaffeNet |  Rank@1 |59.53%  |  62.00%  |   61.02%
+CaffeNet   |Rank@1|59.53% |  62.00%  |  61.02% 
 
-CaffeNet | mAP   | 32.85%  |  37.55%   |  36.72%
+CaffeNet   | mAP  |32.85% |  37.55%  |  36.72%
            
-ResNet_50 | Rank@1 |59.53%  |  62.00%  |   61.02%
+ResNet_50  |Rank@1|75.62% |  76.01%  |  77.52%
 
-ResNet_50 | mAP    | 32.85%  |  37.55%  |   36.72%
+ResNet_50  | mAP  |50.68% |  52.98%  |  53.88%
            
 
 ### Contact us
