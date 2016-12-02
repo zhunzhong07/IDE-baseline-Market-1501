@@ -23,27 +23,26 @@ If you find this code useful in your research, please consider citing:
 
 Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
 
-### Installation (sufficient for the demo)
-
+### Installation
 1. Clone the IDE repository
   ```Shell
   # Make sure to clone with --recursive
-  git clone --recursive https://github.com/zhunzhong07/Market-IDE-baseline.git
+  git clone --recursive https://github.com/zhunzhong07/IDE-baseline-Market-1501
   ```
 
 2. Build Caffe and matcaffe
     ```Shell
     cd $IDE_ROOT/caffe
     # Now follow the Caffe installation instructions here:
-    #   http://caffe.berkeleyvision.org/installation.html
+    # http://caffe.berkeleyvision.org/installation.html
     make -j8 && make matcaffe
     ```
 
 3. Download pre-computed models and Market-1501 dataset
     ```Shell
-    1. Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
-    2. Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
-    3. Please download the pre-trained IDE models and put it in the "out_put/market_train" folder.
+    Please download the pre-trained imagenet models and put it in the "data/imagenet_models" folder.
+    Please download Market-1501 dataset and unzip it in the "market_evaluation/dataset" folder.
+    Please download the pre-trained IDE models and put it in the "out_put/market_train" folder.
     ```
    
 ### Installation for training and testing IDE model
