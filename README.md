@@ -53,6 +53,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 1. Training 
   ```Shell
   cd $IDE_ROOT
+  chmod 777 -R experiments/
   # train IDE on CaffeNet
   ./experiments/market/train_IDE_CaffeNet.sh  
   # train IDE ResNet_50
