@@ -68,6 +68,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   Run Matlab: extract_feature.m
   # The IDE features are saved under: "market_evaluation/feat"
   ```
+  
 3. Evaluation
   ```Shell
     Run Matlab: baseline_evaluation_IDE.m
