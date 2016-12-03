@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+1
 CAFFE=caffe
 DATASET=market
 NET=ResNet_50
