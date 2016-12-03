@@ -70,9 +70,9 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   ```
 
 3. Evaluation
-     ```Shell
+  ```Shell
     Run Matlab: baseline_evaluation_IDE.m
-    ```
+  ```
 
 ### Results
 You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. 
