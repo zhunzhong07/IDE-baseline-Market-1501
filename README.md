@@ -61,19 +61,6 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   # If you encounter this problem: bash: ./experiments/market/train_IDE_CaffeNet.sh: Permission denied
   # Please execute: chmod 777 -R experiments/
   ```
-  
-2. Feature Extraction
-  ```Shell
-  cd $IDE_ROOT/market_evaluation
-  Run Matlab: extract_feature.m
-  # The IDE features are saved under: "market_evaluation/feat"
-  ```
-  
-3. Evaluation
-  ```Shell
-    Run Matlab: baseline_evaluation_IDE.m
-  ```
-
 
 ### Results
 You can download our pre-trained IDE models and IDE features, and put them in the "out_put/market_train"  and "market_evaluation/feat" folder, respectively. 
