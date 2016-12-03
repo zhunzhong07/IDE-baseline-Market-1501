@@ -58,8 +58,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
   # train IDE ResNet_50
   ./experiments/market/train_IDE_ResNet_50.sh
   # The IDE models are saved under: "out/market_train"
-  
-  # If you encounter this problem: bash: ./experiments/market/train_IDE_CaffeNet.sh: Permission denied
+  # If you encounter this problem: bash: ./experiments/market/train_IDE_CaffeNet.sh: Permission denied
   # Please execute: chmod 777 -R experiments/
   ```
   
@@ -67,7 +66,7 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
      ```Shell
     cd $IDE_ROOT/market_evaluation
     Run Matlab: extract_feature.m
-    # The IDE features are saved under: "market_evaluation/feat"
+    # The IDE features are saved under: "market_evaluation/feat"
     ```
 
 3. Evaluation
