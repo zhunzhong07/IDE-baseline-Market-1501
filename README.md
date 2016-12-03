@@ -53,13 +53,15 @@ Requirements for `Caffe` and `matcaffe` (see: [Caffe installation instructions](
 1. Training 
   ```Shell
   cd $IDE_ROOT
-  chmod 777 -R experiments/
   # train IDE on CaffeNet
   ./experiments/market/train_IDE_CaffeNet.sh  
   # train IDE ResNet_50
   ./experiments/market/train_IDE_ResNet_50.sh
   # The IDE models are saved under: "out/market_train"
-  ```
+  
+  # If you encounter this problem: bash: ./experiments/market/train_IDE_CaffeNet.sh: Permission denied
+  # Please execute: chmod 777 -R experiments/
+  ```
   
 2. Feature Extraction
      ```Shell
