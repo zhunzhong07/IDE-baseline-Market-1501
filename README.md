@@ -88,7 +88,7 @@ Using the models and features above, you can reproduce the results as follows:
 |Methods |   Rank@1 | mAP|
 | --------   | -----  | ----  |
 |IDE_CaffeNet + Euclidean  |  59.53% |32.85%|
-|DE_CaffeNet + XQDA        |  62.00% |  37.55%|
+|IDE_CaffeNet + XQDA       |  62.00% |  37.55%|
 |IDE_CaffeNet + KISSME     |  61.02% | 36.72%|
 |IDE_ResNet_50 + Euclidean | 75.62% | 50.68%|
 |IDE_ResNet_50 + XQDA      | 76.01% | 52.98%|
