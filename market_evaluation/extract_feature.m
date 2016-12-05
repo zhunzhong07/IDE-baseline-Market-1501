@@ -41,7 +41,7 @@ for i = 1:3
     
     for n = 1:length(img_file)   
         if mod(n, 1000) ==0
-            fprintf('%s: %d/%d\n',ef_name{i}, n, length(img_file))\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00
+            fprintf('%s: %d/%d\n',ef_name{i}, n, length(img_file))
         end
         img_name = [img_path  img_file(n).name];
         im = imread(img_name);
