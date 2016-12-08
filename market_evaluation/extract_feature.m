@@ -1,7 +1,7 @@
 %% Etract IDE features
 clear;clc;
 addpath('../caffe/matlab/');
-
+addpath(genpath('utils/'));
 % load model and creat network
 caffe.set_device(0);
 caffe.set_mode_gpu();
