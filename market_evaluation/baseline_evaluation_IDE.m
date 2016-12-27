@@ -12,6 +12,7 @@ clc;clear all;close all;
 % Please download Market-1501 dataset and unzip it in the "dataset" folder.
 addpath(genpath('LOMO_XQDA/'));
 addpath(genpath('utils/'));
+addpath(genpath('KISSME/'));
 run('KISSME/toolbox/init.m');
 
 %% network name
