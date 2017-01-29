@@ -1,7 +1,8 @@
 # Code for IDE baseline on Market-1501
 =============
 This code was used for experiments with ID-discriminative Embedding (IDE) for Market-1501 dataset.
-Thank Liboyue, give us suggestions for improvement.
+
+Thanks Liboyue, give us suggestions for improvement.
 
 If you find this code useful in your research, please consider citing:
 
