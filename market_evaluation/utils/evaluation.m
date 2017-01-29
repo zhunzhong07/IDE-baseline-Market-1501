@@ -6,7 +6,7 @@ CMC = [];
 r1_pairwise = zeros(size(dist, 2), 6);% pairwise rank 1 precision  
 ap_pairwise = zeros(size(dist, 2), 6); % pairwise average precision
 
-for k = 1:size(dist, 2)
+parfor k = 1:size(dist, 2)
     k;
     score = dist(:, k);
     q_label = label_query(k);
