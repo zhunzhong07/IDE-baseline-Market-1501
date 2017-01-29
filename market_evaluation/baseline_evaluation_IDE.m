@@ -51,9 +51,11 @@ for n = 1:size(train_feature, 1)
     train_feature(n, :) = train_feature(n, :)./sum_val;
 end
 
-
+% Instead of pdist2. 50 times faster than pdist2
+my_pdist2 = @(A, B) sqrt( bsxfun(@plus, sum(A.^2, 2), sum(B.^2, 2)') - 2*(A*B'));
 %% Euclidean
-dist_eu = pdist2(galFea', probFea');
+
+dist_eu = my_pdist2(galFea', probFea');
 [CMC_eu, map_eu, ~, ~] = evaluation(dist_eu, label_gallery, label_query, cam_gallery, cam_query);
 
 fprintf(['The IDE (' netname ') + Euclidean performance:\n']);
