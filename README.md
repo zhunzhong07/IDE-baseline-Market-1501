@@ -89,12 +89,18 @@ Using the models and features above, you can reproduce the results as follows:
 
 |Methods |   Rank@1 | mAP|
 | --------   | -----  | ----  |
-|IDE_CaffeNet + Euclidean  |  59.53% |32.85%|
-|IDE_CaffeNet + XQDA       |  62.00% |  37.55%|
-|IDE_CaffeNet + KISSME     |  61.02% | 36.72%|
+|IDE_CaffeNet + Euclidean  | 59.53% | 32.85%|
+|IDE_CaffeNet + XQDA       | 62.00% | 37.55%|
+|IDE_CaffeNet + KISSME     | 61.02% | 36.72%|
 |IDE_ResNet_50 + Euclidean | 75.62% | 50.68%|
 |IDE_ResNet_50 + XQDA      | 76.01% | 52.98%|
-|IDE_ResNet_50 + KISSME    | 77.52% |  53.88%|
+|IDE_ResNet_50 + KISSME    | 77.52% | 53.88%|
+
+If you add a dropout = 0.5 layer after pool5, you will get a better performance for ResNet_50:
+
+|IDE_ResNet_50 + dropout(0.5) + Euclidean | 78.92% | 55.03%|
+|IDE_ResNet_50 + dropout(0.5) + XQDA      | 77.35% | 56.01%|
+|IDE_ResNet_50 + dropout(0.5) + KISSME    | 78.80% | 56.13%|
 
 
 ### Contact us
