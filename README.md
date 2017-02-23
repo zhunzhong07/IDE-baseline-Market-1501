@@ -98,6 +98,8 @@ Using the models and features above, you can reproduce the results as follows:
 
 If you add a dropout = 0.5 layer after pool5, you will get a better performance for ResNet_50:
 
+|Methods |   Rank@1 | mAP|
+| --------   | -----  | ----  |
 |IDE_ResNet_50 + dropout(0.5) + Euclidean | 78.92% | 55.03%|
 |IDE_ResNet_50 + dropout(0.5) + XQDA      | 77.35% | 56.01%|
 |IDE_ResNet_50 + dropout(0.5) + KISSME    | 78.80% | 56.13%|
