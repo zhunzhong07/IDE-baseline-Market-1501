@@ -113,3 +113,10 @@ If you have any questions about this code, please do not hesitate to contact us.
 
 [Liang Zheng](http://liangzheng.com.cn)
    
+### Related Repos
+Furthermore, you may check the following codes.
+1. [re-ranking](https://github.com/zhunzhong07/person-re-ranking)
+2. [2stream Network for reID](https://github.com/layumi/2016_person_re-ID)
+3. [Person re-ID with GAN](https://github.com/layumi/Person-reID_GAN)
+4. [Pedestrian Alignment Network](https://github.com/layumi/Pedestrian_Alignment)
+5. [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing)
